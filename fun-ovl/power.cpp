@@ -14,5 +14,5 @@ int main(){
     cin>>m;
     if (n==m){cout<<multi(n,n);}
     else {cout<<multi(n,m);}
-    return 0;
+    return 1;
 }

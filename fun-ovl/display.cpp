@@ -7,15 +7,15 @@ void display(string){
 }
 
 void display(int){
-
+    int n;
 }
 
 void display(float){
-
+    float a;
 }
 
 void display(bool){
-
+    bool b;
 }
 
 int main(){
