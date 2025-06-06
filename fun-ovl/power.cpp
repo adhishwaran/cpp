@@ -2,8 +2,8 @@
 using namespace std;
 
 int multi(int n,int m){
-    if (n==0) return 1;
-    return m * multi(n-1,m);
+    if (m==0) return 1;
+    return n * multi(m-1,n);
 }
 
 int main(){
