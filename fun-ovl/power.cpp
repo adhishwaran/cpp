@@ -1,9 +1,9 @@
 #include <iostream>
 using namespace std;
 
-int multi(int n,int m){
+inline int multi(int n,int m){
     if (m==0) return 1;
-    return n * multi(m-1,n);
+    return n * multi(n,m-1);
 }
 
 int main(){
