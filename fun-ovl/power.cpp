@@ -6,19 +6,21 @@ int multi(int bas,int exp){
     return bas * multi(bas,exp-1);
 }
 
-// int multi(float base,int exp){
-//     if (base==0) return 1;
-//     return exp * multi(base,exp-1);
-// }
+float multi(float base,int exp){
+    if (exp==0) return 1;
+    return base * multi(base,exp-1);
+}
 
-// int multi(int bas,float expo){
-//     if (bas==0) return 1;
-//     return expo * multi(bas,expo-1);
-// }
+float multi(int bas,float expo){
+    if (expo==0) return 1;
+    if (expo <0) return 1;
+    return bas * multi(bas,expo-1);
+}
 
-int multi(float base,float expo){
-    if (base==0) return 1;
-    return expo * multi(base,expo-1);
+float multi(float base,float expo){
+    if (expo==0) return 1;
+    if (expo< 0) return 1;
+    return base * multi(base,expo-1);
 }
 
 int main(){
@@ -32,9 +34,13 @@ int main(){
     cin>>base;
     cout<<"enter expo: ";
     cin>>expo;
-    int x = multi(bas,exp);
-    cout<<"the ans is: "<<x;
-    int y = multi(base,expo);
-    cout<<"the ans is: "<<y;
+    int w = multi(bas,exp);
+    cout<<"the ans is: "<<w<<endl;
+    float x = multi(bas,expo);
+    cout << "the ans is: "<<x<<endl;
+    float y = multi(base,exp);
+    cout <<"the ans is: "<<y<<endl;
+    float z = multi(base,expo);
+    cout<<"the ans is: "<<z;
     return 1;
 }
