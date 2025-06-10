@@ -5,10 +5,8 @@ class Student{
     public:
     string name;
     int age;
-    private:
     int father;
     int mother;
-    protected:
     int sibling;
     Student(){
         string name;
