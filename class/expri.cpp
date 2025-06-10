@@ -6,24 +6,25 @@ class Student{
     string name;
     int age;
     private:
-    float mark;
-    float atten;
+    int father;
+    int mother;
     protected:
-    float fee;
+    int sibling;
     Student(){
         string name;
-        cout<<"enter stu name: ";
+        cout<<"enter your name: ";
         cin>>name;
         int age ;
         cout<< "enter stu age: ";
         cin>>age;
-        float mark ,atten ,fee;
-        cout<< "enter stu mark: ";
-        cin>>mark;
-        cout<< "enter stu atten: ";
-        cin>>atten;
-        cout<< "enter stu fee: ";
-        cin>>fee;
+        int father , mother;
+        cout<<"enter your father name: ";
+        cin>>father;
+        cout<<"enter your mother name: ";
+        cin>>mother;
+        int sibling;
+        cout<<"enter no of sibling: ";
+        cin>>sibling;
     }
     int display(){
         
