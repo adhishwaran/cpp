@@ -8,7 +8,7 @@ class Student{
     int father;
     int mother;
     int sibling;
-    Student(){
+    void stud(){
         string name;
         cout<<"enter your name: ";
         cin>>name;
@@ -25,6 +25,18 @@ class Student{
         cin>>sibling;
     }
     int display(){
-        
+        cout<<name;
+        cout<<age;
+        cout<<father;
+        cout<<mother;
+        cout<<sibling;
+        return 0;
     }
 };
+
+int main(){
+    Student s1;
+    s1.stud();
+    
+    return 0;
+}
