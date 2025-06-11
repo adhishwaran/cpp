@@ -5,10 +5,27 @@ class Areaofshapes{
     public:
     int side,length,breath,hight,base,radius;
     void Area(){
-       
+        int x;
+        cout<<"enter x: ";
+        cin>>x;
+        switch(x){
+            
+        }       
     }
     int cnons(){
-
+        cout<<" ";
+        cin>>side;
+        cout<<" ";
+        cin>>length;
+        cout<<" ";
+        cin>>breath;
+        cout<<" ";
+        cin>>hight;
+        cout<<" ";
+        cin>>base;
+        cout<<" ";
+        cin>>radius;
+        return 0;
     }
 };
 
