@@ -9,7 +9,7 @@ class Areaofshapes{
         cout<<"enter x: ";
         cin>>x;
         switch(x){
-            
+            case 1:
         }       
     }
     int cnons(){
