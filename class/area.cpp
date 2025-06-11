@@ -1,10 +1,13 @@
 #include<iostream>
 using namespace std;
 
-class Area{
+class Areaofshapes{
     public:
     int side,length,breath,hight,base,radius;
-    Area(){
-        
+    void Area(){
+       
+    }
+    int cnons(){
+
     }
 };
