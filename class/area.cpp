@@ -11,3 +11,10 @@ class Areaofshapes{
 
     }
 };
+
+int main(){
+    Areaofshapes s1;
+    s1.Area();
+    s1.cnons();
+    return 0;
+}
