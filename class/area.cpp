@@ -9,22 +9,36 @@ class Areaofshapes{
         cout<<"enter x: ";
         cin>>x;
         switch(x){
-            case 1:{}return 1;
-
+            case 1:{
+                int c = side*side;
+                cout<<"The area of square is : "<<c;
+            }
+            case 2:{
+                int c = length * breath;
+                cout<<"the area of rectangle is : "<<c;
+            }
+            case 3:{
+                float s = 3.14*(radius*radius);
+                cout<<"the area of circle is : "<<s;
+            }
+            case 4 :{
+                float t = 0.5*base*hight;
+                cout<<"the area of triangle is : "<<t;
+            }
         }       
     }
     int cnons(){
-        cout<<" ";
+        cout<<"enter side: ";
         cin>>side;
-        cout<<" ";
+        cout<<"enter length: ";
         cin>>length;
-        cout<<" ";
+        cout<<"enter breath: ";
         cin>>breath;
-        cout<<" ";
+        cout<<"enter hight: ";
         cin>>hight;
-        cout<<" ";
+        cout<<"enter base: ";
         cin>>base;
-        cout<<" ";
+        cout<<"enter radius: ";
         cin>>radius;
         return 0;
     }
