@@ -19,7 +19,7 @@ class Addtion{
         cout<<"enter c1:";
         cin>>c1;
     }
-        
+    
 };
 
 int main(){
