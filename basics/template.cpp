@@ -2,7 +2,7 @@
 using namespace std;
 
 template <typename S>  
-int add(){
+float add(){
     S a,b;
     cout<<"enter a: ";
     cin>>a;
@@ -13,7 +13,7 @@ int add(){
 }
 
 template <typename S>
-int sub(){
+float sub(){
     S a,b;
     cout<<"enter a: ";
     cin>>a;
@@ -24,7 +24,7 @@ int sub(){
 }
 
 template <typename S>
-int muti(){
+float muti(){
     S a,b;
     cout<<"enter a: ";
     cin>>a;
@@ -35,7 +35,7 @@ int muti(){
 }
 
 template <typename S>
-int divid(){
+float divid(){
     S a,b;
     cout<<"enter a: ";
     cin>>a;
@@ -45,7 +45,7 @@ int divid(){
         cout<<divid()<<endl;
     }
     catch(const char*msg){
-        cout<<'exception'<<msg<<endl;
+        cout<<"exception"<<msg<<endl;
     }
     S c =  a /  b;
     cout<<"result is: "<<c<<endl;
@@ -58,22 +58,22 @@ int main(){
     cin>>x;
     switch (x){
         case '+':{
-            int o = add();
+            int o = add<float>();
             cout<<o;
             break;
         }
         case '-':{
-            int p = sub();
+            int p = sub<float>();
             cout<<p;
             break;
         }
         case '*':{
-            int i = muti();
+            int i = muti<float>();
             cout<<i;
             break;
         }
         case '/':{
-            int u = divid();
+            int u = divid<float>();
             cout<<u;
             break;
         }
