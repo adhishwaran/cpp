@@ -19,11 +19,21 @@ class Addtion{
         cout<<"enter c1:";
         cin>>c1;
     }
-    void function(){
+    int add(){
+        
+    }
+    float add(){
+
+    }  
+    int add(){
+
+    }  
+    float add(){
         
     }
 };
 
 int main(){
     Addtion x;
+    x.add();
 }
