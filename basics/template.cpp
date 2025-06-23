@@ -50,7 +50,7 @@ S divid(){
         return c;
     }
     catch(runtime_error &msg){
-        cout<<"excption"<<msg<<endl;
+        cout<< "Exception: " << msg.what();
         return 0;
     }    
 }
@@ -77,7 +77,9 @@ int main(){
         }
         case '/':{
             int u = divid<float>();
-            cout<<u;
+            if(u!=0){
+                cout<<u;
+            }
             break;
         }
         default : cout<<"invalid operator given";
