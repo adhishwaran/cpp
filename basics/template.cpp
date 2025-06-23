@@ -42,17 +42,17 @@ S divid(){
     cout<<"enter b: ";
     cin>>b;
     try{
-        if (b!=0){
-            S c =  a /  b;
-            cout<<"result is: "<<c<<endl;
-            return c;
+        if(b==0){
+            throw runtime_error("Denominator is zero");
         }
-        
+        S c =  a /  b;
+        cout<<"result is: "<<c<<endl;
+        return c;
     }
-    catch(const char*msg){
-        throw msg;
+    catch(runtime_error &msg){
+        cout<<"excption"<<msg<<endl;
+        return 0;
     }    
-    return 0;
 }
 
 int main(){
