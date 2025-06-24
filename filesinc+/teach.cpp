@@ -2,20 +2,14 @@
 #include<fstream>
 using namespace std;
 
-struct Persona{
-    char name[50];
-    int age;
-    int tenthmark;
-    int twelvethmark;
-    char education[50];
-    
-    char readname[50];
-    int readage;
-    int readtenthmark;
-    int readtwelvethmark;
-    char readeducation[50];
-};
-
 int main(){
-    
+    ofstream fout("teach.txt"); 
+    fout<<"hello world ! ";
+    fout.close();
+    ifstream fin("teach.txt");
+    string line;
+    getline(fin,line);
+    cout<<line;
+    fin.close();
+    return 0;
 }
