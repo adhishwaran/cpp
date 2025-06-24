@@ -19,21 +19,27 @@ class Addtion{
         cout<<"enter c1:";
         cin>>c1;
     }
-    int add(){
-        
+
+    int addtwo(){
+        return a+b;
     }
-    float addi(){
-
+    float addtwof(){
+        return a1+b1;
     }  
-    int add(){
-
+    int addthree(){
+        return a+b+c;
     }  
-    float addi(){
-        
+    float addthreef(){
+        return a1+b1+c1;
     }
 };
 
 int main(){
     Addtion x;
-    x.add();
+    x.input();
+    cout<<"the sum is "<<x.addtwo()<<endl;
+    cout<<"the sum is "<<x.addtwof()<<endl;
+    cout<<"the sum is "<<x.addthree()<<endl;
+    cout<<"the sum is "<<x.addthreef()<<endl;
+    return 0;
 }
