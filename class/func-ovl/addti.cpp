@@ -22,13 +22,13 @@ class Addtion{
     int add(){
         
     }
-    float add(){
+    float addi(){
 
     }  
     int add(){
 
     }  
-    float add(){
+    float addi(){
         
     }
 };
