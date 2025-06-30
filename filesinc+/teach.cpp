@@ -4,7 +4,7 @@ using namespace std;
 
 int main(){
     ofstream fout("teach.txt"); 
-    fout<<"hello world ! ";
+    fout<<"python is goat! ";
     fout.close();
     ifstream fin("teach.txt");
     string line;
