@@ -11,13 +11,16 @@ int main(){
     int n;
     cout<<"enter n: ";
     cin>>n;
+    
     int arr[n];
     for (int i=0;i<n;i++){
         cin>>arr[i];
     }
+    
     int m;
     cout<<"enter m: ";
     cin>>m;
+    
     int x = searchele(arr,n,0,m);
     cout<<"the ele is found "<< x;
     return 0;
