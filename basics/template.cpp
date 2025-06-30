@@ -61,22 +61,22 @@ int main(){
     cin>>x;
     switch (x){
         case '+':{
-            int o = add<float>();
+            float o = add<float>();
             cout<<o;
             break;
         }
         case '-':{
-            int p = sub<float>();
+            float p = sub<float>();
             cout<<p;
             break;
         }
         case '*':{
-            int i = muti<float>();
+            float i = muti<float>();
             cout<<i;
             break;
         }
         case '/':{
-            int u = divid<float>();
+            float u = divid<float>();
             if(u!=0){
                 cout<<u;
             }
