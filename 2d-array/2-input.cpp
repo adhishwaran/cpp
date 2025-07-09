@@ -15,7 +15,7 @@ int main(){
         }
     }
     int r,c;
-    cout<<"enter ro.no:";
+    cout<<"enter .. ro.no:";
     cin>>r;
     cout<<"enter co.no:";
     cin>>c;
